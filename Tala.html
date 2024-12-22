@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="Tala.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#featured">Featured</a>
+                <a href="#arrivals">Arrivals</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#blog">Blog</a>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="background-image"></div>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="img/table.png" alt="Book 1">
+        </div>
+        <div class="text-section">
+            <h1>WELCOME TO <br><span>BOOK STORE</span></h1>
+            <p>Welcome to the Book Store! Here you’ll find a variety 
+                of books to suit your interests. Enjoy browsing and 
+                we hope you have a great shopping experience!
+            </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-box">
+            <i class="fas fa-truck"></i>
+            <h3>Fast Delivery</h3>
+            <p>
+                refers to the quick and efficient process of shipping or delivering products to customers. 
+                It ensures that items reach their destination in the shortest possible time, enhancing customer satisfaction.            
+            </p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-headphones-alt"></i>
+            <h3>24 x 7 Services</h3>
+            <p>
+                refers to services that are available 24 hours a day, 7 days a week, without interruption.
+                 It ensures round-the-clock availability, providing continuous support or assistance to customers.           
+             </p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-tags"></i>
+            <h3>Best Deal</h3>
+            <p>
+                "Best Deal" refers to the most advantageous offer available, providing the greatest value for money. 
+                It typically involves discounts, promotions, or superior terms compared to other options.            
+            </p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-lock"></i>
+            <h3>Secure Payment</h3>
+            <p>
+                Secure Payment" refers to a method of making financial transactions that ensures the safety and privacy of the user's data.
+                 It involves encryption, authentication, and fraud prevention measures to protect against unauthorized access and cyber threats.
+            </p>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <div class="text-section">
+            <h2>About Us</h2>
+            <p>Welcome to our Book Store! We offer a wide range of books for every reader, with fast delivery,
+                 secure payments, and a great shopping experience. Our goal is to bring the joy of reading to 
+                 all with the best deals and a vast selection.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="image-section">
+            <img src="img/about.png" alt="Books and Candle">
+        </div>
+    </div>
+    
+    <div class="featured-container">
+        <h2>Featured Books</h2>
+        <div class="carousel">
+            <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel-track" id="carousel-track">
+                <!-- Featured Books Cards Here -->
+                <!-- Example Book Card -->
+                <div class="book-card">
+                    <img src="img/book_1.jpg" alt="Book 1">
+                    <h3>COCOGOOSE</h3>
+                    <p>J.K. Rowling</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_2.jpg" alt="Book 2">
+                    <h3>SUBLETTEO</h3>
+                    <p>Margaret Atwood</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_3.jpg" alt="Book 3">
+                    <h3>WESIPARI</h3>
+                    <p>JJ.R.R. Tolkien </p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_4.jpg" alt="Book 4">
+                    <h3>BEAUTIFULLY</h3>
+                    <p>Brené Brown </p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_5.jpg" alt="Book 5">
+                    <h3>CleverLands</h3>
+                    <p> Roald Dahl</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_6.jpg" alt="Book 6">
+                    <h3>DICK FRANCIS</h3>
+                    <p>Dick Franci</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_7.png" alt="Book 7">
+                    <h3>THE ART CITY</h3>
+                    <p>John Deo</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_8.png" alt="Book 8">
+                    <h3>MUSIC ROCK</h3>
+                    <p>Keith Richards</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_9.jpg" alt="Book 9">
+                    <h3>FREE FALL</h3>
+                    <p>Tom Clancy</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_10.png" alt="Book 10">
+                    <h3>SAMPLE TEXT</h3>
+                    <p>William Strunk Jr</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_11.jpg" alt="Book 11">
+                    <h3>BORING GIRLS</h3>
+                    <p>Sara Taylor</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_12.png" alt="Book 12">
+                    <h3>THANKS IN EVERYTHING</h3>
+                    <p>Rhonda Byrne</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_13.png" alt="Book 13">
+                    <h3>YOUR TITLE GOES HERE</h3>
+                    <p>David Allen</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_14.png" alt="Book 14">
+                    <h3>SAMPLE TEXT</h3>
+                    <p>Vladimir Nabokov</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/book_15.png" alt="Book 15">
+                    <h3>BLACK HISTORY MONTH</h3>
+                    <p>Maya Angelou</p>
+                    <p>Thriller, Horror, Romance</p>
+                    <p><span class="price">$25.50</span> <span class="old-price">$28.60</span></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- More book cards go here -->
+            </div>
+            <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="new-arrivals-container">
+        <h2>New Arrivals</h2>
+        <div class="books-grid">
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_1.jpg" alt="Book 1">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_2.jpg" alt="Book 2">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_3.jpg" alt="Book 3">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+        
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_4.jpg" alt="Book 4">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_5.jpg" alt="Book 5">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_6.jpg" alt="Book 6">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_7.jpg" alt="Book 7">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_8.webp" alt="Book 8">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_9.jpg" alt="Book 9">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+            <!-- New Arrival Cards Here -->
+            <div class="book-card">
+                <img src="img/arrival_10.jpg" alt="Book 10">
+                <h3>New Arrivals</h3>
+                <p class="stars">★★★★★</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- More book cards go here -->
+        </div>
+        
+    </div>
+
+    <div class="reviews">
+        <h2>Reviews</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <img src="img/user_2.webp" alt="User Image" class="user-img">
+                <h3>Bassam abu jalboush</h3>
+                <p>Bassam abu jalboush is from Jenin, Arrabah. He is a multimedia student in his third year at the Arab American University.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-card">
+                <img src="img/user.png" alt="User Image" class="user-img">
+                <h3>Tala alsouqi</h3>
+                <p>Tala alsouqi is from Jenin. He is a cs student in his third year at the Arab American University.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="digital-book">
+        <div class="book-content">
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+        <div class="book-image">
+            <img src="img/banner.jpg" alt="Digital Book Illustration">
+        </div>
+    </div>
+
+    <div class="blog-section">
+        <h1 class="section-title">Our Blog</h1>
+        <div class="blog-container">
+            <!-- Blog Cards Here -->
+            <div class="blog-card">
+                <img src="img/blog_1.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h2>Blogger</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut impedit reiciendis.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="img/blog_2.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h2>Blogger</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut impedit reiciendis.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="img/blog_3.jpg" alt="Blog Image">
+                <div class="blog-content">
+                    <h2>Blogger</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut impedit reiciendis.</p>
+                </div>
+            </div>
+            
+            <!-- More blog cards go here -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="img/logo.png" alt="Logo" class="footer-logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Featured</li>
+                    <li>Arrivals</li>
+                    <li>Reviews</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>+94 12 345 6789</p>
+                <p>+94 32 444 699</p>
+                <p>bookstore123@gmail.com</p>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="You email id here">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-design">Design By <span>WT Master Code</span></p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        function moveCarousel(direction) {
+            const track = document.getElementById('carousel-track');
+            const cards = document.querySelectorAll('.book-card');
+            const totalCards = cards.length;
+            const visibleCards = Math.floor(track.parentElement.offsetWidth / 220); 
+
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            } else if (currentIndex > totalCards - visibleCards) {
+                currentIndex = totalCards - visibleCards;
+            }
+
+            const translateX = -currentIndex * 125; 
+            track.style.transform = `translateX(${translateX}px)`;
+        }
+    </script>
+</body>
+</html>
